@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <title>Packs</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Packs</title>
+<style>
     :root {
       --primary-color: #007BFF; /* Used for other elements like borders */
       --secondary-color: #0056b3;
@@ -309,100 +310,108 @@
       }
     }
   </style>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
-  <script src="https://publisher.linkvertise.com/cdn/linkvertise.js"></script>
-  <script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+<script src="https://publisher.linkvertise.com/cdn/linkvertise.js"></script>
+<script>
     linkvertise(380136, {whitelist: [], blacklist: [""]});
   </script>
 </head>
 <body>
-  <input class="global-search-bar" onkeyup="globalSearch(this.value)" placeholder="🔍 Search..." type="text"/>
-  <!-- Clickable logo directing to the new link -->
-  <a href="https://mcbeclient.github.io/dl/">
-    <img alt="Logo" class="logo" src="https://i.pinimg.com/736x/d3/1d/07/d31d07313f89289e06d6cae9a38d998e.jpg" tabindex="0"/>
-  </a>
-  <a class="lobby-link" href="https://yashofree.github.io/link/">
+<input class="global-search-bar" onkeyup="globalSearch(this.value)" placeholder="🔍 Search..." type="text"/>
+<!-- Clickable logo directing to the new link -->
+<a href="https://mcbeclient.github.io/dl/">
+<img alt="Logo" class="logo" src="https://i.pinimg.com/736x/d3/1d/07/d31d07313f89289e06d6cae9a38d998e.jpg" tabindex="0"/>
+</a>
+<a class="lobby-link" href="https://yashofree.github.io/link/">
     Home
   </a>
-  <div class="folder-container" id="mainSection">
-    <div class="folder-header">
-      <i class="fas fa-folder-open"></i>
+<div class="folder-container" id="mainSection">
+<div class="folder-header">
+<i class="fas fa-folder-open"></i>
       Packs
     </div>
-    <!-- New All button -->
-    <div class="clickable" onclick="showAllItems()">
-      <i class="fas fa-globe"></i>
+<!-- New All button -->
+<div class="clickable" onclick="showAllItems()">
+<i class="fas fa-globe"></i>
       All
     </div>
-    <div class="clickable" onclick="showSection('packSection')">
-      <!-- Utility now uses a tools icon -->
-      <i class="fas fa-tools"></i>
+<div class="clickable" onclick="showSection('packSection')">
+<!-- Utility now uses a tools icon -->
+<i class="fas fa-tools"></i>
       Utility
     </div>
-    <div class="clickable" onclick="showSection('androidSection')">
-      <!-- Survival now uses a running icon -->
-      <i class="fas fa-heart"></i>
+<div class="clickable" onclick="showSection('androidSection')">
+<!-- Survival now uses a running icon -->
+<i class="fas fa-heart"></i>
       Survival
     </div>
-    <div class="clickable" onclick="showSection('windowsSection')">
-      <!-- PvP now uses a raised fist icon -->
-      <i class="fas fa-fist-raised"></i>
+<div class="clickable" onclick="showSection('windowsSection')">
+<!-- PvP now uses a raised fist icon -->
+<i class="fas fa-fist-raised"></i>
       PvP
     </div>
-    <div class="clickable" onclick="window.location.href = 'https://craftydlc.github.io/v2/'">
-      <i class="fas fa-shopping-cart"></i>
+<div class="clickable" onclick="window.location.href = 'https://craftydlc.github.io/v2/'">
+<i class="fas fa-shopping-cart"></i>
       Marketplace
     </div>
-  </div>
-  <!-- Hidden sections -->
-  <div class="hidden-section" id="packSection">
-    <header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,195,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
-      <i class="fas fa-tools"></i>
-      <br/>
+</div>
+<!-- Hidden sections -->
+<div class="hidden-section" id="packSection">
+<header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,195,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
+<i class="fas fa-tools"></i>
+<br/>
       Utility
     </header>
-    <input class="search-bar" onkeyup="sectionSearch(this.value, 'packSection')" placeholder="🔍 Search..." type="text"/>
-    <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
-      <i class="fas fa-arrow-left"></i> Back
+<input class="search-bar" onkeyup="sectionSearch(this.value, 'packSection')" placeholder="🔍 Search..." type="text"/>
+<button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+<i class="fas fa-arrow-left"></i> Back
     </button>
-  </div>
-  <div class="hidden-section" id="androidSection">
-    <header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,195,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
-      <i class="fas fa-running"></i>
-      <br/>
+</div>
+<div class="hidden-section" id="androidSection">
+<header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,195,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
+<i class="fas fa-running"></i>
+<br/>
       Survival
     </header>
-    <input class="search-bar" onkeyup="sectionSearch(this.value, 'androidSection')" placeholder="🔍 Search..." type="text"/>
-    <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
-      <i class="fas fa-arrow-left"></i> Back
+<input class="search-bar" onkeyup="sectionSearch(this.value, 'androidSection')" placeholder="🔍 Search..." type="text"/>
+<button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+<i class="fas fa-arrow-left"></i> Back
     </button>
-  </div>
-  <div class="hidden-section" id="windowsSection">
-    <header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,195,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
-      <i class="fas fa-fist-raised"></i>
-      <br/>
+</div>
+<div class="hidden-section" id="windowsSection">
+<header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,195,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
+<i class="fas fa-fist-raised"></i>
+<br/>
       PvP
     </header>
-    <input class="search-bar" onkeyup="sectionSearch(this.value, 'windowsSection')" placeholder="🔍 Search..." type="text"/>
-    <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
-      <i class="fas fa-arrow-left"></i> Back
+<input class="search-bar" onkeyup="sectionSearch(this.value, 'windowsSection')" placeholder="🔍 Search..." type="text"/>
+<div class="section">
+<div class="section-title">Astra 16x</div>
+<a class="download-badge" href="https://www.mediafire.com/file/40dpxg0yiaqq5ff/Astra16x.mcpack/file" target="_blank">
+<i class="fas fa-download"></i> Download
+  </a>
+<img alt="Astra 16x" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/nEE247eXYYg/maxresdefault.jpg"/>
+</div>
+
+<button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+<i class="fas fa-arrow-left"></i> Back
     </button>
-  </div>
-  <!-- New All Clients hidden section -->
-  <div class="hidden-section" id="allSection">
-    <header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,195,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
-      <i class="fas fa-globe"></i>
-      <br/>
+</div>
+<!-- New All Clients hidden section -->
+<div class="hidden-section" id="allSection">
+<header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,195,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
+<i class="fas fa-globe"></i>
+<br/>
       All
     </header>
-    <input class="search-bar" onkeyup="sectionSearch(this.value, 'allSection')" placeholder="🔍 Search..." type="text"/>
-    <!-- Container for merged items -->
-    <div id="allItemsContainer"></div>
-    <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
-      <i class="fas fa-arrow-left"></i> Back
+<input class="search-bar" onkeyup="sectionSearch(this.value, 'allSection')" placeholder="🔍 Search..." type="text"/>
+<!-- Container for merged items -->
+<div id="allItemsContainer"></div>
+<button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+<i class="fas fa-arrow-left"></i> Back
     </button>
-  </div>
-  <script>
+</div>
+<script>
     let searchTimeout;
     function globalSearch(query) {
       clearTimeout(searchTimeout);
